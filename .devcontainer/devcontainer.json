@@ -2,23 +2,22 @@
 {
   "name": "Django",
   "context": ".",
-  "dockerFile": "Dockerfile",
-
+  "dockerComposeFile": ["./docker-compose.yml"],
   "service": "dev",
   "appPort": [8000],
-  "workspaceFolder": "./workspace",
+  "workspaceFolder": "/workspace",
   "extensions": [
     "ms-python.python",
     "ms-python.vscode-pylance",
     "mhutchie.git-graph",
     "ms-vsts.team",
-    "eamodio.gitlens",
-    "jeppeanderson.vscode-kafka"
+    "eamodio.gitlens"
   ],
   "settings": {
     "python.pythonPath": "/usr/local/bin/python",
     "python.formatting.provider": "black",
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+    "workbench.colorTheme": "Dracula"
   },
   "postCreateCommand": ["python --version"]
 }

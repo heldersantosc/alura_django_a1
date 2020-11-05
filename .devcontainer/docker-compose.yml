@@ -1,0 +1,26 @@
+version: "3.5"
+
+services:
+  dev:
+    restart: always
+    image: django-devcontainer
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ..:/workspace
+    ports:
+      - 8000:8000
+    command: sleep infinity
+    networks:
+      - painel
+
+networks:
+  painel:
+    name: painel
+
+volumes:
+  zookeeper-volume-data:
+  zookeeper-volume-logs:
+  kafka-volume-data:
+  postgres-volume-data:

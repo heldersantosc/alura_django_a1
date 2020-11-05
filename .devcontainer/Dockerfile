@@ -13,11 +13,9 @@ WORKDIR /workspace
 
 RUN apt-get -y install python3-dev
 
-
-
 # Install Python dependencies from requirements.txt if it exists
-#COPY requirements.txt /workspace/
-#RUN if [ -f "requirements.txt" ]; then pip install -r requirements.txt && rm requirements.txt*; fi
+COPY requirements.txt /workspace/
+RUN if [ -f "requirements.txt" ]; then pip install -r requirements.txt && rm requirements.txt*; fi
 
 # Clean up
 RUN apt-get autoremove -y \
