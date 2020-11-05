@@ -3,8 +3,14 @@
 Somente no ambiente da aplicacao usando o 'venv'
 -> python3 -m venv ./venv
 
+Instalando o pip 
+-> python -m pip install --upgrade pip
+-> python -m ensurepip
+
 abrir o ambiente usando o venv
 -> source /workspace/venv/bin/activate
+
+o PIP deve ser instalado no venv
 
 o terminal ficara desse jeito
 (venv) root@b1785c37c80f:/workspace# 
@@ -20,3 +26,6 @@ executando o help
 
 para iniciar um projeto
 -> django-admin startproject alurareceita .
+
+para rodar a aplicacao 
+-> python manage.py runserver

@@ -3,7 +3,7 @@
 # Licensed under the MIT License. See https://go.microsoft.com/fwlink/?linkid=2090316 for license information.
 #-------------------------------------------------------------------------------------------------------------
 
-FROM nikolaik/python-nodejs:python3.7-nodejs12
+FROM python:3
 
 # Install git, process tools
 RUN apt-get update && apt-get -y install git procps
@@ -12,6 +12,8 @@ RUN mkdir /workspace
 WORKDIR /workspace
 
 RUN apt-get -y install python3-dev
+# RUN source /workspace/venv/bin/activate
+# RUN apt-get -y install Django
 
 # Install Python dependencies from requirements.txt if it exists
 COPY requirements.txt /workspace/
