@@ -1,0 +1,24 @@
+// See https://aka.ms/vscode-remote/devcontainer.json for format details.
+{
+  "name": "Django",
+  "context": ".",
+  "dockerFile": "Dockerfile",
+
+  "service": "dev",
+  "appPort": [8000],
+  "workspaceFolder": "./workspace",
+  "extensions": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "mhutchie.git-graph",
+    "ms-vsts.team",
+    "eamodio.gitlens",
+    "jeppeanderson.vscode-kafka"
+  ],
+  "settings": {
+    "python.pythonPath": "/usr/local/bin/python",
+    "python.formatting.provider": "black",
+    "python.testing.pytestEnabled": true
+  },
+  "postCreateCommand": ["python --version"]
+}
