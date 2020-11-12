@@ -29,3 +29,6 @@ para iniciar um projeto
 
 para rodar a aplicacao 
 -> python manage.py runserver
+
+para instalar os requirments 
+-> pip install setuptools
