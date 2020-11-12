@@ -32,3 +32,12 @@ para rodar a aplicacao
 
 para instalar os requirments 
 -> pip install setuptools
+
+
+--------------------------------------
+
+para fazer as migrations e migrate
+->  python manage.py makemigrations
+->  python manage.py migrate
+
+
