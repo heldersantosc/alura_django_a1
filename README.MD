@@ -49,6 +49,10 @@ deve ser inserido em settings.py
 TEMPLATES > DIRS
 
 
+para pegar os arquivos estaticos
+-> python3 manage.py collectstatic
+
+
 criar o arquivo urls.py
 
 
