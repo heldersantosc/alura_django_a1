@@ -13,11 +13,11 @@ services:
       - 8000:8000
     command: sleep infinity
     networks:
-      - painel
+      - django
 
 networks:
-  painel:
-    name: painel
+  django:
+    name: django
 
 volumes:
   zookeeper-volume-data:

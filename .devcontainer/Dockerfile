@@ -12,8 +12,12 @@ RUN mkdir /workspace
 WORKDIR /workspace
 
 RUN apt-get -y install python3-dev
-# RUN source /workspace/venv/bin/activate
+RUN apt-get -y install python3-venv
+RUN apt install -y python3-pip
+RUN python3 -m pip install django
+RUN pip install -U autopep8 --user
 # RUN apt-get -y install Django
+# RUN source /workspace/venv/bin/activate
 
 # Install Python dependencies from requirements.txt if it exists
 COPY requirements.txt /workspace/
