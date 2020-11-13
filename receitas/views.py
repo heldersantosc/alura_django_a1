@@ -7,4 +7,4 @@ from django.http import HttpResponse
 
 # retorna um html
 def index(request):
-    return HttpResponse('<h1>Receitas</h1>')
+    return render(request, 'index.html')

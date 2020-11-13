@@ -43,6 +43,12 @@ criando um APP de RECEITAS
 
 ---
 
+para inserir arquivos estaticos no django 
+import os
+deve ser inserido em settings.py 
+TEMPLATES > DIRS
+
+
 criar o arquivo urls.py
 
 
